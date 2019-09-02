@@ -9,7 +9,7 @@ sections:
   label: Pages
   create: documents
   match: "**/*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: "/uploads"
@@ -21,4 +21,4 @@ build:
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: yarn develop
