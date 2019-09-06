@@ -3,62 +3,73 @@ import React from 'react';
 import { Section, Container } from '@components/global';
 
 import FaqItem from '@common/FaqItem';
-import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'What can go into the care packages?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        Socks, gloves, tissues, soft foods (such as custard packs), crackers, bottled water, books,
+        flashlight/head lamp(s), writing tools such as a pen/pencil/paper, bananas, band aids, tea bags, 
+        instant coffee, cups, plastic spoons, deodorant (fragrance free), hand cream, vaseline, dried fruit,
+        wet wipes, etc. 
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'When are care packages given out?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        Care packages are given out 4-6 times a year in inner city Limerick. Times are usually in the 
+        afternoon, and they are handed out individually. Our bags have our logo on them so they can be 
+        recognised. We feel that this will bring, as well as build awareness. 
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'How can I donate, and where?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        The Care Project will only accept sealed items, along with the receipt of purchase, which contains 
+        the specific purchase value of those items. We are not receiving any vouchers, money, or clothing at the 
+        moment. Whatever you donate will be checked, placed into an accounting inventory of donations, and what 
+        cannot be included in a pack will be returned immediately. Food goods will be accepted within 1 month of 
+        purchase. Items that may endanger the individuals receiving the packages, such as nail clippers, razors, 
+        plastic knives, (see list below), will not be accepted. 
+
+        You can email us through the contact form to arrange pick up at a point in Limerick city. 
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'Do you get governmental, charity or council funds?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+        No. The Care Project is funded personally at the moment. 
       </>
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
+    title: 'Are you affiliated with a charity, and/or a religious group?',
     content: () => (
       <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        No.
+      </>
+    ),
+  },
+  {
+    title: 'What items are NOT included in the packages?',
+    content: () => (
+      <>
+        Generally the items that will NOT be included in the care packages are the ones that have a 
+        high probability, within the realms of clear and obvious logic, to cause harm to individuals that will 
+        receive the package. These include for example: razors, nail clippers, knives, glass items, sharp plastics, 
+        alcohol hand sanitizers, alcohol based drinks/chocolates/candy, energy drinks, tobacco, any hemp products 
+        (even hand cream), over the counter medication(s), cleaners/sanitizer wipes (apart from Milton), scissors, 
+        tweezers, safety pins etc. This list is ongoing, and it is up to The Care Project to assess each new item. 
+
+        If you have any questions as to can, and is included, and what you can donate, please use the contact form 
+        to get in touch. 
       </>
     ),
   },

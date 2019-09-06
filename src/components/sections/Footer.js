@@ -6,15 +6,10 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
-  },
   {
     icon: InstagramIcon,
     link: 'https://instagram.com/ajay_ns',
@@ -52,14 +47,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
+              <h2>The Care Project</h2>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (
@@ -97,7 +85,7 @@ const FooterWrapper = styled.footer`
 const Copyright = styled.div`
   font-family: ${props => props.theme.font.secondary};
   ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.regular};
+  color: ${props => props.theme.color.white.regular};
 
   a {
     text-decoration: none;

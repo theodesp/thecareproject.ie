@@ -7,34 +7,26 @@ import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
+    name: 'Georgie Vargemezi',
+    image: 'georgie.jpg',
     role: 'Founder',
+    description: `For personal reasons, Georgie has come close to homelessness in the past. 
+    She found The Care Project, and manages it daily. She has a strong background in 
+    community work and the arts'.`
   },
   {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    name: 'Villie Flari',
+    image: 'villie.jpg',
+    role: 'Volunteer Donation Coordinator',
+    description: `Villie has also come close to homelessness and feels strongly for the matter.
+    She is involved in the management of The Care Project, and especially voluntters and donations.`
   },
   {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
-  },
-  {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
-  },
-  {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
+    name: 'Theo Despoudis',
+    image: 'theo.jpg',
+    role: 'Frontend Engineer and Multitasker',
+    description: `Theo, Georgie's husband, looks after the inventory, the IT side of things, and provides
+    general support.`
   },
 ];
 
@@ -71,7 +63,7 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, role, description }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
@@ -81,6 +73,7 @@ const Team = () => (
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
                   <Title>{name}</Title>
                   <Subtitle>{role}</Subtitle>
+                  <Description>{description}</Description>
                 </div>
               );
             })}
@@ -154,6 +147,12 @@ const Title = styled.p`
 `;
 
 const Subtitle = styled.p`
+  ${props => props.theme.font_size.small};
+  color: ${props => props.theme.color.black.light};
+  margin-bottom: 1em;
+`;
+
+const Description = styled.p`
   ${props => props.theme.font_size.small};
   color: ${props => props.theme.color.black.light};
 `;
