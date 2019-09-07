@@ -1,38 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import logo from '@images/art/logo.png';
 
 import { Container } from '@components/global';
 
 const Header = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_logo: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "logo" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 1400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <HeaderWrapper>
+  <HeaderWrapper>
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_logo.childImageSharp.fluid} />
+              <img src={logo} alt="logo" />
             </Art>
           </Grid>
         </Container>
-      </HeaderWrapper>
-    )}
-  />
+  </HeaderWrapper>
 );
 
 const HeaderWrapper = styled.header`
