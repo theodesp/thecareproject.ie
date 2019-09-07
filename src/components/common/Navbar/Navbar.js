@@ -14,6 +14,8 @@ import {
 } from './style';
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import ExternalLink from '@common/ExternalLink';
+import TwitterIcon from '@static/icons/twitter.png';
 
 const NAV_ITEMS = ['Mission', 'How', 'Team', 'FAQ'];
 
@@ -49,6 +51,11 @@ class Navbar extends Component {
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
+        <NavItem key={'twitter'}>
+            <ExternalLink href={'https://twitter.com/the_careproject'}>
+                <img src={TwitterIcon} alt="twitter" />
+            </ExternalLink>
+        </NavItem>
       </Scrollspy>
     </NavListWrapper>
   );

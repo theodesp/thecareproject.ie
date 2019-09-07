@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import TwitterIcon from '@static/icons/twitter.svg';
+import TwitterIcon from '@static/icons/twitter.png';
 
 const SOCIAL = [
   {
