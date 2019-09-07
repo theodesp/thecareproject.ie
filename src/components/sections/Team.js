@@ -12,14 +12,14 @@ const TEAM = [
     role: 'Founder',
     description: `For personal reasons, Georgie has come close to homelessness in the past. 
     She found The Care Project, and manages it daily. She has a strong background in 
-    community work and the arts'.`
+    community work and the arts.`
   },
   {
     name: 'Villie Flari',
     image: 'villie.jpg',
     role: 'Volunteer Donation Coordinator',
     description: `Villie has also come close to homelessness and feels strongly for the matter.
-    She is involved in the management of The Care Project, and especially voluntters and donations.`
+    She is involved in the management of The Care Project, and especially volunteers and donations.`
   },
   {
     name: 'Theo Despoudis',

@@ -6,6 +6,15 @@ import FaqItem from '@common/FaqItem';
 
 const FAQS = [
   {
+    title: 'What is your contact email?',
+    content: () => (
+      <>
+        You can email us at thecareprojectireland@gmail.com 
+      </>
+    ),
+  },
+  
+{
     title: 'What can go into the care packages?',
     content: () => (
       <>
@@ -37,7 +46,7 @@ const FAQS = [
         purchase. Items that may endanger the individuals receiving the packages, such as nail clippers, razors, 
         plastic knives, (see list below), will not be accepted. 
 
-        You can email us through the contact form to arrange pick up at a point in Limerick city. 
+        You can email us at thecareprojectireland@gmail.com to arrange pick up at a point in Limerick city. 
       </>
     ),
   },
@@ -61,6 +70,8 @@ const FAQS = [
     title: 'What items are NOT included in the packages?',
     content: () => (
       <>
+        First of all, money in any form- cash, cheques, coupons, gift cards etc. 
+        
         Generally the items that will NOT be included in the care packages are the ones that have a 
         high probability, within the realms of clear and obvious logic, to cause harm to individuals that will 
         receive the package. These include for example: razors, nail clippers, knives, glass items, sharp plastics, 
