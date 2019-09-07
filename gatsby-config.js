@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  pathPrefix: `/thecareproject.ie`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-svgr`,
