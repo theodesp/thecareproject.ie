@@ -38,7 +38,7 @@
     "start": "npm run dev",
     "format": "prettier --write \"src/**/*.js\"",
     "clean": "rm -rf .cache && rm -rf public",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "devDependencies": {
     "prettier": "^1.15.2"
